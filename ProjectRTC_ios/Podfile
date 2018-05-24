@@ -1,0 +1,9 @@
+#platform :ios, '8.0'
+
+use_frameworks!
+
+target 'VideoDemo’ do
+    pod 'libjingle_peerconnection'
+    pod 'Socket.IO-Client-Swift', '~> 13.1.0'
+    pod 'Toast'
+end

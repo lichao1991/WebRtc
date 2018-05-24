@@ -1,0 +1,13 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream" "${PODS_CONFIGURATION_BUILD_DIR}/Toast"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/libjingle_peerconnection" $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/libjingle_peerconnection"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/libjingle_peerconnection" "${PODS_ROOT}/libjingle_peerconnection/libjingle_peerconnection"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/libjingle_peerconnection"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"WebRTC" -l"c" -l"sqlite3" -l"stdc++" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "GLKit" -framework "SocketIO" -framework "Starscream" -framework "Toast" -framework "UIKit" -framework "VideoToolbox"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

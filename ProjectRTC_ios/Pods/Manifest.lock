@@ -1,0 +1,21 @@
+PODS:
+  - libjingle_peerconnection (11177.2.0)
+  - Socket.IO-Client-Swift (13.1.3):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.5)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - libjingle_peerconnection
+  - Socket.IO-Client-Swift (~> 13.1.0)
+  - Toast
+
+SPEC CHECKSUMS:
+  libjingle_peerconnection: 3458f646ddd61f08a9f3a0c43fb01fff5c165eb8
+  Socket.IO-Client-Swift: d30d6fd08a38ad2a182b090936a043bf512ab2de
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 4bcb2f5d82e7613b55d5f176d93793c4f88bf138
+
+COCOAPODS: 1.4.0.beta.2
