@@ -8,11 +8,12 @@ It requires [node.js](http://nodejs.org/download/)
 * npm start
 
 You can test it in the (Chrome or Firefox) browser at localhost:18081 or localhost:18080. 
-18081是https 服务 18080 是http服务
+18081是https服务(尽量用https服务 因为谷歌浏览器 想打开一些硬件 必须是Https)
+18080 是http服务
 
 Android：https://github.com/pchab 这里配套的android WebRtc项目过老，socket连接的服务都是http
 ，同时在华为P8及以上手机都会出现适配问题（相机打不开问题），还有若干关闭摄像头，关闭多媒体流崩溃的问题，
-故根据node服务相应信令（例加入房间，退出房间等指令）
+故根据node服务相应信令（例加入房间，退出房间等指令） 用最新的Libjingle进行更改android项目
 
 IOS:同样的问题，链接的socket服务都只有http配置
 
